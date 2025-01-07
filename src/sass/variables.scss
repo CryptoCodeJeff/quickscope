@@ -1,0 +1,23 @@
+:root {
+  --colorBrand: #efc847;
+  --colorBrandSoft: #c9e9e7;
+  --colorBackground: #fff2cf;
+  --colorBase: #efc847;
+  --colorBase2: var(--colorBackground);
+  --colorBorder: #efc847;
+  --colorText: #212121;
+  --colorText2: #6b6b6b;
+  --colorText3: #f1f1f1;
+  --radius: 5px;
+  --menuHeight: 60px; // update globalVariables.ts MENU_HEIGHT
+}
+
+body[dark-mode] {
+  --colorBackground: #121212; // #282828
+  --colorBase: #282828;
+  --colorBase2: #3f3f3f;
+  --colorBorder: rgba(255, 255, 255, 0.2);
+  --colorText: #f3f3f3;
+  --colorText2: #adadad;
+  --colorText3: #f1f1f1;
+}
