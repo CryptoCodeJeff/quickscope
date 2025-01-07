@@ -41,37 +41,9 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--colorBackground);
+  background-color: black;
   margin: 0;
-
-  background: linear-gradient(-45deg, #ffffff, #ffe4e9, #ffd89d, #ffffff, #ffa791, #e8ffd5);
-  background-size: 400% 400%;
-  animation: gradient 9s ease infinite;
   height: 100vh;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 button {
