@@ -18,6 +18,24 @@ import Button from '@/components/essentials/Button.svelte'
     z-index: -1;
   }
 
+  .logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.4;
+    border-radius: 20px;
+
+    @include notDesktop {
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 200px;
+      opacity: 1;
+    }
+  }
+
   .titles {
     position: absolute;
     left: 0;
@@ -27,6 +45,7 @@ import Button from '@/components/essentials/Button.svelte'
     h1 {
       text-align: center;
       font-size: 80px;
+      text-shadow: 0 0 2px black;
 
       @include notDesktop {
         font-size: 50px;
@@ -55,6 +74,7 @@ import Button from '@/components/essentials/Button.svelte'
 
     @include notDesktop {
       margin-left: 0;
+      margin-top: 100px;
       padding: 10px;
     }
   }
@@ -66,6 +86,8 @@ import Button from '@/components/essentials/Button.svelte'
     <h2 reveal="0.6">Quick Scoping Jeets off the Solana Blockchain</h2>
     <CA client:load />
   </div>
+
+  <img class="logo" src="/assets/logo.jpg" alt="" />
 
   <div class="interactions">
     <Button icon="telegram" text="Telegram" href="https://t.me/quickscope_on_sol" />
